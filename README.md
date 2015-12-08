@@ -3,6 +3,11 @@ Role Name
 
 win_import_pfx_cert
 
+Getting Started
+---------------
+
+mv files/module/* /usr/share/ansible/my_modules/
+
 Description
 -----------
 
