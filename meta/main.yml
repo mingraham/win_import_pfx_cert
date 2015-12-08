@@ -16,5 +16,4 @@ galaxy_info:
     - certification
     - certifications
     - pfx
-dependencies:
-    - { role: win_import_pfx_cert }
+dependencies: []
