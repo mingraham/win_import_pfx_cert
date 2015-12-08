@@ -1,6 +1,11 @@
 Role Name
 =========
 
+win_import_pfx_cert
+
+Description
+-----------
+
 Imports pfx certs to windows machine with proper condition checks and remote cert location variability
 
 Requirements

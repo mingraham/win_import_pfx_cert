@@ -1,5 +1,5 @@
 #!powershell
-# (c) 2014, Matt Martz <matt@sivel.net>, and others
+# (c) 2015, Michael Ingraham <mingraham@solarcity.com>, and others
 #
 # This file is part of Ansible
 #
