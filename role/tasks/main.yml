@@ -1,0 +1,17 @@
+---
+
+- name: Verify temp directory is present
+  win_file:
+    path: C:\ansible_temp
+    state: directory
+
+- name: Download cert to 'C:/ansible_temp' IF missing OR modified
+  win_copy: src="{{ cert_location }}" dest='C:/ansible_temp/tmp_cert.pfx'
+
+- name: run powershell script for solarcity token signing
+  win_import_pfx_cert:
+    path: 'C:/ansible_temp/tmp_cert.pfx'
+    state: present
+
+- name: Remove the cert from 'C:/ansible_temp'
+  win_file: path='C:/ansible_temp/tmp_cert.pfx' state=absent
